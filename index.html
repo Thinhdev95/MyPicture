@@ -27,6 +27,7 @@
         }
         .main {
             display: inline-flex;
+            width: -webkit-fill-available;
             /* justify-content: center;
             align-items: center;
             margin-top: 50px; */
@@ -117,7 +118,12 @@
             </svg>
         </div>
         <div id="content">
-            thtml adasdasdad
+            <h2>Chọn tỉnh thành</h2>
+            <p>Click vào một tỉnh thành để xem thông tin chi tiết</p>
+            <div id="province-info">
+                <h3 id="province-name">Hà Nội</h3>
+                <p id="province-code">Mã tỉnh: VN01</p>
+            </div>
         </div>
     </div>
 
@@ -260,10 +266,19 @@ const positions = Object.keys(names).map(key => ({ code: key, name: names[key] }
            // In mã và tên ra console để kiểm tra
            var contentDiv = document.querySelector('#content');
 
-            // Set the innerHTML of the selected div
-            contentDiv.innerHTML = `<p>${code} , ${name}</p>`;
-            contentDiv.innerHTML = ` <h1>Giới thiệu về tỉnh ${name}</h1>
-            <p> ${name} là một tỉnh thuộc Việt Nam. Tỉnh này có diện tích khoảng XX km² và dân số khoảng XX triệu người.</p>`;
+            // // Set the innerHTML of the selected div
+            // contentDiv.innerHTML = `<p>${code} , ${name}</p>`;
+            // contentDiv.innerHTML = ` <h1>Giới thiệu về tỉnh ${name}</h1>
+            // <p> ${name} là một tỉnh thuộc Việt Nam. Tỉnh này có diện tích khoảng XX km² và dân số khoảng XX triệu người.</p>`;
+            
+            var provinceName = document.getElementById("province-name");
+            var provinceCode = document.getElementById("province-code");
+
+            // Set new values
+            provinceName.textContent = name;
+            provinceCode.textContent = code;
+
+            
 
         }
 
