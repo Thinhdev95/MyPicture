@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map of Vietnam</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+
     <style>
         svg {
             width: 800px;
-            height: auto;
+            height: auto; */
             /* border: 1px solid #000; */
         }
         path {
@@ -31,17 +31,18 @@
             align-items: center;
             margin-top: 50px; */
         }
-        @media screen and (max-width: 430px){
+        @media screen and (max-width: 450px){
             .main {
                 display: inline-block;
             }
             #map {
-                width: max-content;
-                width: 430px;
+                width: 450px;
+                /* width: max-content; */
+                /* width: 430px; */
             }
         }
     </style>
-    
+
 </head>
 <body>
     <div class="main">
@@ -111,15 +112,15 @@
                  <path class="clickable-path" title="Hà Nội" onclick="zoomToProvince(this)" d= "M671.8 738.2l3.4 1.3 0.9 0.8 1 1.3 0.6 1.3 1.3 4.2 1.1 2.4 0.4 1 0.6 1.3 0.8 0.7 0.8 0.4 3.8 0.6 3.8 1.1 1 0.6 0.5 0.7 0.4 0.8 0.4 1.9 0.7 1.3 0.8 0.7 0.9 0.6 1.2 0.3 2.1 0.4 0.8 0 0.8-0.1 0.4 0 0 0.2 2.3 3-0.6 1.2-0.5-0.4-0.4 0.5-0.5 1.2-1.1 1.3-0.1 0.5 0 0.6-0.3 0.9-0.3 0.4-1.1 0.9-0.2 0.5-0.1 0.7-0.4 0.6-0.7 1-0.4 0-0.7-0.6-0.9-0.1-1 0.1-1.1-0.2-0.6-0.8-0.5-2.1-0.3-0.4-1.3 0.3 0.1 0.8 0.6 0.7 0.5 0.4-0.2 0.8-0.2 0.9 0 0.8 0.4 1-1.3 0.1-0.4-0.1 0.9 1.6 0.1 2.6-0.6 4 0.2 2.4-0.3 0.7-0.7 0.7-1.4 1.2-0.9 0.5-0.9 0.3-1 0-1.6-0.8-0.1 0-0.1-0.9-0.3-0.8-0.7-1.2-1.1-1-1.6-0.7-1.2-0.2-1.8 0.2-0.6-0.1-0.4-0.3-0.3-0.8-0.1-1.7-0.2-0.6-0.4-0.4-1.5-0.4-0.5-0.3-0.4-0.6-0.1-0.6-0.3-1.7-0.2-0.7-0.5-0.7-0.8-0.5-0.9-0.4-2.8 0-0.7-3.1 0-0.6 0.1-0.9 0.6-0.6 2.1-1.8 1.2-1.7 0.4-1.1 0.1-0.9-0.2-0.6-0.4-0.6-1-1-0.6-0.8-0.4-1.1-0.2-1.8 2.6-8 0.7-5.5-0.1-1.3-0.3-1-0.2-1.2 0.2-1.1 0.5-0.9 0.5-0.7 1-0.8z" />
                  <path class="clickable-path" title="Hà Nội" onclick="zoomToProvince(this)" d= "M568.5 792.1l1.3-0.6 0.4-0.4 0.2-0.5 0.2-0.3 0.5-0.5 1-0.7 1.2-1.2 0.6-0.9 0.6-1.1 0.8-0.9 0.2-0.4 0.1-0.5 0.1-1 0.2-0.8 0.3-0.7 0.5-1 0.9-0.8 1.2-0.6 5.5-1.8 4.4-2.3 2.3 0.4 1.6 0 0.5 0 0.3 0.2 0.1 0.3 0.1 0.3 0 0.4 0 1.1 0 0.5 0.4 0.5 0.6 0.2 1.2 0.3 1.2 0.4 0.6 0.5 0.2 0.5 0 0.3-0.2 0.3-0.6 0.5-0.2 0.3-0.2 0.5 0.1 0.7 0.3 0.8 0.4 0.4 0.7 0.2 0.9 0 2.6 0.3 4.8 2.4-0.4 0.1-0.3 0.2-0.4 0.3-0.6 0.6-0.6 0.9-1.3 2.3-0.8 1.9-1.3 2.2-0.3 0.6-0.6 1.7-1.2 2-0.6 1.6-0.3 1.6-0.4 1-1 1.6-0.4 0.8 0.6 1 1.1 0.8 1 0.4 1.3 0.2 1-0.2 0.9 0.1 0.8 0.5 0.8 0.7 0.7 1.2 0.5 1.2 0.6 1.7 0.2 1.9-0.1 1.8-0.7 1.7-0.9 1.2-2.7 2.7-2-2.5-0.6-0.2-0.9 0-0.7 0.5-1.3 1.4-3.8 4.7-1 0.5-0.9 0-0.8-0.2-0.8-0.6-0.5-0.7-0.1-0.7 0-0.8 0.2-0.8-0.2-0.7-0.5-0.6-0.8-0.4-0.8 0.1-0.8 0.2-5.2 2.5-0.3 0.4-0.1 0.4 0.1 0.6-0.1 0.5-0.1 0.6-0.6 0.7-1 0.6-4.5 1.7-0.4 0-0.4 0.1-0.1-1.3-0.7-1-1.7-1.6-0.2 0.9 0.6 0.7 0.8 0.5 0.4 0.6-0.5 1.5 0 0.3-0.3 0-0.3 0-0.4 1.7-0.1 1.8-0.7-1.1-0.4-1.2-1.2-1.2-1-0.9-0.8-0.8-0.7-0.5-0.6-0.5-0.7 0-0.8 0.4-0.7 0.3-1.1-0.1-1-0.8-0.7-0.7-0.7-0.3-0.6-0.3-0.5-0.2-0.6-0.2-0.5-0.2-0.1-0.7 0-0.3-0.2-0.8-0.1-1.4-0.2-0.7 0.2-0.1 0.2-0.1 2.1 1.2 0.2 0.1 0.2-0.1 0.2-0.1 0.5-0.4 0.3-0.2 0.4-0.2 0.5-0.1 0.6-0.1 0.5 0 0.5 0.2 0.4 0.2 0.4 0.2 0.3 0.1 0.2 0 0.1-0.1 0.1 0 0-0.1 0-0.1-0.1-0.5 0-0.1 0.1-0.1 0.1-0.2 0-0.1 0.1-0.4 0-0.5-0.3-1-1.6-3.1-1-1.3-0.2-1.8-0.4-0.6-0.5-0.7-0.7-0.7-0.5-0.7-0.3-0.6-0.2-0.5-0.1-0.5 0.1-1.1-0.2-0.6-0.1-0.5 0.3-0.6 0.7-0.6 0.8-0.4 0.8-0.2 0.6 0.1 0.5 0.2 0.5 0.6 0.6 0.4 0.8 0.4 0.7 0.1 0.7 0 0.6-0.2 2.5-2.1 1-1.9 0.2-0.7 0-0.9-0.7-1.9-0.6-1-0.5-0.7-0.5-0.4-0.3-0.6 0.2-1 1.8-4.1z" />
                  <path class="clickable-path" title="Hà Nội" onclick="zoomToProvince(this)" d= "M508.8 237.6l-2.9-1.6-2.4-2-1.1-1.6-1.9-4.6-1.4-4.7 1.4-3.4 0.4-1.6 0.5-0.8 0.4-0.2 0.4 0.2 0.7 0.2 0.9 0 3.3-1.4 1.9 0.3 1.3-0.4 0.6-0.4 1.2-1.7 0.8 0.1 0.6 0.3 0.1 0.4-0.1 0.5-0.2 0.5-0.1 0.7 0.1 0.7 0.3 0.6 1.3 2 0.3 0.3 1 0.1 2.1-1 0.8 0.4 0.1 0.5 0.2 1.8 0.3 0.8 1.3 1.1 0.6 0.7 0.2 0.9 0.4 1.8 0.4 0.8-1.8 0.2-0.9-0.1-2.1 0.4-0.9-0.1-1 0.1-0.9 0.6-0.9 1.7-0.4 1.3-0.5 0.8-0.7 0.5-0.5 0-0.4-0.2-0.3-1-0.4-0.2-0.4 0.1-0.6 0.4-1 1.8-0.1 3.4z" />
-        
-        
+
+
             </svg>
         </div>
         <div id="content">
-            thtml adasdasdad
+            Thử nghiệm nội dung
         </div>
     </div>
-    
+
     <script>
 const names = {
   VN57: "Bình Dương",
@@ -203,7 +204,7 @@ const positions = Object.keys(names).map(key => ({ code: key, name: names[key] }
         });
         });
 
-          // hande click show info 
+          // hande click show info
           var paths = document.querySelectorAll('.clickable-path');
             paths.forEach(function(path, index) {
             const position = positions[index];
@@ -227,11 +228,11 @@ const positions = Object.keys(names).map(key => ({ code: key, name: names[key] }
             // Set the new viewBox
             svg.setAttribute('viewBox', viewBoxX + ' ' + viewBoxY + ' ' + svg.clientWidth + ' ' + svg.clientHeight);
 
-            
+
         }
         function zoomToProvince(evt) {
-            
-           
+
+
 
             var svg = document.getElementById('map');
             var bbox = evt.getBBox(); // Get the bounding box of the clicked province
@@ -243,19 +244,19 @@ const positions = Object.keys(names).map(key => ({ code: key, name: names[key] }
             // Calculate the new viewBox values for zooming
             var newViewBoxX = x - (svg.clientWidth / scale) / 2;
             var newViewBoxY = y - (svg.clientHeight / scale) / 2;
-            var newViewBoxWidth = svg.clientWidth / scale;  
+            var newViewBoxWidth = svg.clientWidth / scale;
             var newViewBoxHeight = svg.clientHeight / scale;
 
             // Set the new viewBox attribute
             svg.setAttribute('viewBox', newViewBoxX + ' ' + newViewBoxY + ' ' + newViewBoxWidth + ' ' + newViewBoxHeight);
-           
+
             // Lấy path được click từ đối tượng sự kiện
            var path = evt
-        
+
            // Lấy dữ liệu từ thuộc tính data-code và data-name của path
            var code = path.getAttribute('data-code');
            var name = path.getAttribute('data-name');
-        
+
            // In mã và tên ra console để kiểm tra
            var contentDiv = document.querySelector('#content');
 
@@ -263,9 +264,9 @@ const positions = Object.keys(names).map(key => ({ code: key, name: names[key] }
             contentDiv.innerHTML = `<p>${code} , ${name}</p>`;
             contentDiv.innerHTML = ` <h1>Giới thiệu về tỉnh Quảng Ngãi</h1>
         <p>Quảng Ngãi là một tỉnh thuộc vùng miền Trung Việt Nam. Tỉnh này có diện tích khoảng XX km² và dân số khoảng XX triệu người.</p>`;
-           
+
         }
-       
+
     </script>
 </body>
 </html>
