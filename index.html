@@ -11,7 +11,7 @@
     <style>
         svg {
             width: 800px;
-            height: auto; */
+            height: auto;
             /* border: 1px solid #000; */
         }
         path {
@@ -31,12 +31,12 @@
             align-items: center;
             margin-top: 50px; */
         }
-        @media screen and (max-width: 450px){
+        @media screen and (max-width: 728px){
             .main {
                 display: inline-block;
             }
             #map {
-                width: 450px;
+                width: max-content;
                 /* width: max-content; */
                 /* width: 430px; */
             }
@@ -117,7 +117,7 @@
             </svg>
         </div>
         <div id="content">
-            Thử nghiệm nội dung
+            thtml adasdasdad
         </div>
     </div>
 
@@ -262,8 +262,8 @@ const positions = Object.keys(names).map(key => ({ code: key, name: names[key] }
 
             // Set the innerHTML of the selected div
             contentDiv.innerHTML = `<p>${code} , ${name}</p>`;
-            contentDiv.innerHTML = ` <h1>Giới thiệu về tỉnh Quảng Ngãi</h1>
-        <p>Quảng Ngãi là một tỉnh thuộc vùng miền Trung Việt Nam. Tỉnh này có diện tích khoảng XX km² và dân số khoảng XX triệu người.</p>`;
+            contentDiv.innerHTML = ` <h1>Giới thiệu về tỉnh ${name}</h1>
+            <p> ${name} là một tỉnh thuộc Việt Nam. Tỉnh này có diện tích khoảng XX km² và dân số khoảng XX triệu người.</p>`;
 
         }
 
